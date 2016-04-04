@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>m-banner</title>
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0"/>
+  <style>
+    #bannerContainer {
+      width: 300px;
+      height: 200px;
+      overflow: hidden;
+    }
+    #bannerContainer>div:nth-child(2n+1) {
+      background: #f4f4f4;
+    }
+
+    .m-banner-wrap {
+      width: 1200px;
+      height: 100%;
+      position: relative;
+    }
+
+    .m-banner {
+      width: 300px;
+      height: 100%;
+      float: left;
+    }
+
+    .m-banner:nth-child(2n+1) {
+      background: #f4f4f4;
+    }
+  </style>
+</head>
+<body>
+<div id="bannerContainer">
+  <!--<div class="m-banner-wrap">-->
+    <!--<div class="m-banner">-->
+      <!--1-->
+    <!--</div>-->
+    <!--<div class="m-banner">-->
+      <!--2-->
+    <!--</div>-->
+    <!--<div class="m-banner">-->
+      <!--3-->
+    <!--</div>-->
+    <!--<div class="m-banner">-->
+      <!--4-->
+    <!--</div>-->
+  <!--</div>-->
+</div>
+
+</body>
+<script src="../m-banner.js"></script>
+<script>
+  new MBanner('bannerContainer', {
+    imageList: [
+      {
+        url: '',
+        imageUrl: ''
+      },
+      {
+        url: '',
+        imageUrl: ''
+      },
+      {
+        url: '',
+        imageUrl: ''
+      },
+      {
+        url: '',
+        imageUrl: ''
+      }
+    ]
+  });
+  console.log(MBanner);
+</script>
+</html>
