@@ -19,11 +19,12 @@
 
   //屏幕宽度
   var clientWidth = window.innerWidth || document.documentElement.clientWidth;
-  var containerElem;
+  var containerElem; // banner容器
   var bannerWrap;
   var interval; // 自动播放标记
   var index = 1; // banner 播放下标
   var moveDirection = 'next'; // banner 移动方向  'prev' or 'next'
+
 
   /**
    * m-banner 构造函数
